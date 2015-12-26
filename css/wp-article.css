@@ -1,0 +1,152 @@
+/* RESET ALL
+-------------------------------------------------- */
+
+.entry-title, .entry-meta, .entry-content, .entry-title *, .entry-meta *, .entry-content *,
+.post-title, .post-meta, .post-content, .post-title *, .post-meta *, .post-content * {
+    /*all: initial;*/
+}
+
+/* ENTRY
+-------------------------------------------------- */
+.entry-title,
+.post-title {
+    color: #000 !important;
+    line-height: 1.4 !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+    margin: 10px 0;
+    display: block;
+}
+.entry-meta,
+.post-meta {
+    display: block;
+}
+.entry-meta, .entry-meta a, .entry-meta p, .entry-meta time,
+.post-meta, .post-meta a, .post-meta p, .post-meta time {
+    color: #8A9299 !important;
+    font-size: 14px !important;
+    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+}
+.entry-content,
+.post-content {
+    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+}
+.entry-content ul, .entry-content ol,
+.post-content ul, .post-content ol {
+    padding-left: 30px;
+}
+
+.entry-content p, .entry-content p a,
+.post-content p, .post-content p a {
+    line-height: 1.875 !important;
+    font-size: 16px !important;
+    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+}
+.entry-content p,
+.post-content p {
+    color: #000 !important;
+    margin: 0 0 24px;
+    display: block;
+}
+.entry-content h2,
+.post-content h2 {
+    margin: 50px 0 20px;
+    display: block;
+    color: #000 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+    line-height: 30px;
+}
+.entry-content h3,
+.post-content h3 {
+    color: #000 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+    display: block;
+}
+.entry-content h4,
+.post-content h4 {
+    color: #000;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+    display: block;
+}
+.entry-content .column,
+.post-content .column {
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.entry-content .column ol:last-child, .entry-content .column p:last-child, .entry-content .column ul:last-child,
+.post-content .column ol:last-child, .post-content .column p:last-child, .post-content .column ul:last-child {
+    margin-bottom: 0;
+}
+
+.entry-content blockquote,
+.post-content blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: inherit;
+    border-left: 5px solid #eee;
+}
+.entry-content blockquote ol:last-child, .entry-content blockquote p:last-child, .entry-content blockquote ul:last-child,
+.post-content blockquote ol:last-child, .post-content blockquote p:last-child, .post-content blockquote ul:last-child {
+    margin-bottom: 0;
+}
+
+.entry-content img,
+.post-content img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+    .entry-title,
+    .post-title {
+        font-size: 20px !important;
+    }
+    .entry-content h2,
+    .post-content h2 {
+        font-size: 20px !important;
+    }
+    .entry-content h3,
+    .post-content h3 {
+        font-size: 16px !important;
+    }
+    .entry-content h4,
+    .post-content h4 {
+        font-size: 14px !important;
+    }
+    .entry-content p,
+    .post-content p {
+        margin-bottom: 20px;
+    }
+    .entry-content p, .entry-content p a,
+    .post-content p, .post-content p a {
+        font-size: 15px !important;
+    }
+}
+
+.entry-content kbd,
+.post-content kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+}
+.entry-content code, .entry-content kbd, .entry-content pre,
+.post-content code, .post-content kbd, .post-content pre {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}

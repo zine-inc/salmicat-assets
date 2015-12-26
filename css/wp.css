@@ -1,0 +1,284 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/* GLOBAL
+-------------------------------------------------- */
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
+}
+body {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    text-rendering: optimizelegibility;
+	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	background-color: #fff;
+	color: #555;
+	font-family: 'Noto Sans Japanese', serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+html, body, table, input, textarea, select, button {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* OVERRIDE
+-------------------------------------------------- */
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+}
+
+/* EXTRA COMPONENTS
+-------------------------------------------------- */
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: .5;
+    -webkit-box-shadow: inset 0 6px 14px rgba(0,0,0,.2), inset 0 -6px 14px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 6px 14px rgba(0,0,0,.2), inset 0 -6px 14px rgba(0,0,0,.2);
+    box-shadow: inset 0 6px 14px rgba(0,0,0,.2), inset 0 -6px 14px rgba(0,0,0,.2);
+}
+.img-rounded {
+    border-radius: 6px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.circle-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 50%;
+}
+.circle-icon .fa {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.circle-icon .fa-feedly {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon-feedly.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;
+    opacity: .8;
+}
+.circle-icon .fa-feedly:before {
+    content: "";
+}
+.fa-facebook {
+    color: #315096 !important;
+}
+.fa-twitter {
+    color: #55acee !important;
+}
+.fa-rss {
+    color: #FF9B00 !important;
+}
+
+/* ZINE STYLES
+-------------------------------------------------- */
+.z-followus-list {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+    display: table;
+    table-layout: fixed;
+}
+.z-followus-list li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.z-article-share {
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.z-article-share li {
+    margin: 0 1px;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    line-height: 45px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+.z-article-share a {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    opacity: 1;
+    border-radius: 5px;
+}
+.z-article-share a:hover,
+.z-article-share a:focus,
+.z-article-share a:visited:hover,
+.z-article-share a:visited:focus {
+    color: #fff;
+    opacity: .6;
+}
+.z-article-share a img {
+    vertical-align: inherit;
+}
+.z-article-share a span {
+    float: right;
+    letter-spacing: 2px;
+}
+.z-article-share a .fa {
+    color: #fff !important;
+}
+.z-article-share .btn-facebook {
+    background-color: #315096;
+}
+.z-article-share .btn-twitter {
+    background-color: #55acee;
+}
+.z-article-share .btn-hatena {
+    background-color: #008fde;
+}
+.z-article-share .btn-pocket {
+    background-color: #ef4056;
+}
+.z-article-share .btn-line {
+    text-align: center;
+    background-color: #00c300;
+}
+
+@media screen and (max-width: 480px) {
+    .z-article-share li {
+        height: 60px;
+        line-height: 25px;
+    }
+    .z-article-share a {
+        text-align: center;
+        padding: 10px;
+    }
+    .z-article-share a .fa {
+        width: 100%;
+        display: inline-block;
+    }
+    .z-article-share a span {
+        width: 100%;
+        font-size: 16px;
+        display: inline-block;
+    }
+    .z-article-share a.btn-line {
+        padding: 17px 10px;
+    }
+}
+
+.z-article-biglike {
+    color: #fff;
+    background: #2b2b2b;
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.z-article-biglike .z-article-biglike-thumbnail {
+    width: 50%;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+.z-article-biglike .z-article-biglike-text {
+    width: 50%;
+    padding: 20px 15px;
+    font-size: 12px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+.z-article-biglike .z-article-biglike-text p {
+    margin: 0;
+}
+.z-article-biglike .z-article-biglike-text .help-block {
+    color: #999;
+    font-size: 12px;
+}
+.z-article-biglike .z-biglike-box {
+    width: 70%;
+    margin: 15px auto 20px;
+    -webkit-transform: scale(1.2)!important;
+    -moz-transform: scale(1.2)!important;
+    transform: scale(1.2)!important;
+    text-align: center!important;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+@media screen and (min-width: 40em) {
+    .z-article-biglike .z-article-biglike-thumbnail {
+        width: 60%;
+    }
+    .z-article-biglike .z-article-biglike-text {
+        width: 40%;
+        font-size: 18px;
+        padding: 25px 20px;
+    }
+    .z-article-biglike .z-biglike-box {
+        -webkit-transform: scale(1.4)!important;
+        -moz-transform: scale(1.4)!important;
+        transform: scale(1.4)!important;
+        text-align: center!important;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+}
+@media (min-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+    .z-article-biglike .z-article-biglike-text,
+    .z-article-biglike .z-article-biglike-text .help-block {
+        font-size: 11px;
+    }
+    .z-article-biglike .z-article-biglike-thumbnail {
+        height: 105px;
+    }
+    .z-article-biglike .z-article-biglike-text {
+        padding: 10px;
+        height: 105px;
+        overflow: hidden;
+    }
+    .z-article-biglike .z-biglike-box {
+        margin: 10px auto;
+    }
+}
