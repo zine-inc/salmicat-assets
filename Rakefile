@@ -1,4 +1,5 @@
 # encoding: utf-8
+# SEE ALSO: http://spin.atomicobject.com/2013/09/23/deploy-aws-s3-rake/
 
 require 'aws'
 require 'logger'
