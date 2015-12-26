@@ -1,5 +1,12 @@
 box: ruby
 
+build:
+  steps:
+    - script:
+        name: echo
+        code: |
+          echo 'Hello, world!'
+
 deploy:
     steps:
         - bundle-install
