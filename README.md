@@ -2,6 +2,8 @@
 
 ZINE's static resources.
 
+[![wercker status](https://app.wercker.com/status/dec864bb03b1f0cc813aa6008fd607bb/m "wercker status")](https://app.wercker.com/project/bykey/dec864bb03b1f0cc813aa6008fd607bb)
+
 ## Getting started
 
 ### Website
