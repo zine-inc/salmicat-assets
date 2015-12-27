@@ -62,8 +62,6 @@
     (function() {
         'use strict';
 
-        var opts = { top: 80 };
-
         $(window).load(function() {
             if (ua.category !== 'pc') return;
             if ($('.js-sidebar-fixbox').length === 0) return;
@@ -80,16 +78,14 @@
 
             if ($main.height() < $sidebar.height()) return;
 
-            $fixbox.css({ width: boxWidth, top: opts['top'] });
-
             $(window).scroll(function() {
                 var windowHeight = window.innerHeight,
                     windowTop = $(window).scrollTop();
 
                 if (windowTop > borderLine) {
-                    borderHeight < windowHeight && $fixbox.css('position', 'fixed');
+                    borderHeight < windowHeight && $fixbox.addClass('active');
                 } else {
-                    $fixbox.css('position', 'static');
+                    $fixbox.removeClass('active');
                 }
             });
         });
