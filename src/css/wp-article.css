@@ -14,7 +14,6 @@
     line-height: 1.4 !important;
     font-size: 24px !important;
     font-weight: bold !important;
-    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
     margin: 10px 0;
     display: block;
 }
@@ -26,11 +25,9 @@
 .post-meta, .post-meta a, .post-meta p, .post-meta time {
     color: #8A9299 !important;
     font-size: 14px !important;
-    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
 }
 .entry-content,
 .post-content {
-    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
 }
 .entry-content ul, .entry-content ol,
 .post-content ul, .post-content ol {
@@ -41,7 +38,6 @@
 .post-content p, .post-content p a {
     line-height: 1.875 !important;
     font-size: 16px !important;
-    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
 }
 .entry-content p,
 .post-content p {
@@ -56,7 +52,6 @@
     color: #000 !important;
     font-size: 20px !important;
     font-weight: bold !important;
-    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
     line-height: 30px;
 }
 .entry-content h3,
@@ -64,7 +59,6 @@
     color: #000 !important;
     font-size: 16px !important;
     font-weight: bold !important;
-    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
     display: block;
 }
 .entry-content h4,
@@ -72,7 +66,6 @@
     color: #000;
     font-size: 14px !important;
     font-weight: bold !important;
-    font-family: Avenir, 'Helvetica neue', Helvetica, '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
     display: block;
 }
 .entry-content .column,
