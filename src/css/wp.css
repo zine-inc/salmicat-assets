@@ -14,8 +14,6 @@ body {
     text-rendering: optimizelegibility;
 	-webkit-overflow-scrolling: touch;
 	-webkit-font-smoothing: antialiased;
-	background-color: #fff;
-	color: #555;
 	font-family: 'Noto Sans Japanese', serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -95,7 +93,7 @@ html, body, table, input, textarea, select, button {
     color: #55acee !important;
 }
 .fa-rss {
-    color: #FF9B00 !important;
+    color: #ff9b00 !important;
 }
 
 /* ZINE STYLES
