@@ -85,8 +85,8 @@
     vertical-align: middle;
 }
 
-.entry-content .caption,
-.post-content .caption {
+.entry-content figure figcaption,
+.post-content figure figcaption {
     color: #8a9299 !important;
     font-size: small !important;
     margin-left: 15px;
