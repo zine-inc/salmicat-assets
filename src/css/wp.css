@@ -154,13 +154,13 @@ html, body, table, input, textarea, select, button {
 .z-article-share a span {
     float: right;
     color: #fff !important;
-    line-height: 40px;
+    line-height: 42px;
     letter-spacing: 2px;
 }
 .z-article-share a .fa {
     float: left;
     color: #fff !important;
-    line-height: 40px;
+    line-height: 42px;
 }
 .z-article-share .btn-facebook {
     background-color: #315096;
