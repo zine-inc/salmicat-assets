@@ -191,11 +191,16 @@ html, body, table, input, textarea, select, button {
     .z-article-share a .fa {
         width: 100%;
         display: inline-block;
+        line-height: 20px;
     }
     .z-article-share a span {
         width: 100%;
-        font-size: 16px;
         display: inline-block;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .z-article-share a img + span {
+        line-height: 22px;
     }
     .z-article-share a.btn-line {
         padding: 17px 10px;
