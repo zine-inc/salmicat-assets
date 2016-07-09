@@ -53,3 +53,5 @@ function load_styles_and_scripts() {
     }
 }
 ```
+
+## Examples
