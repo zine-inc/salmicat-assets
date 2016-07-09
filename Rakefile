@@ -11,8 +11,10 @@ log.level = Logger::INFO
 pwd = Dir.getwd
 
 from_folder = 'src'
-to_folder = 'assets'
-max_age = 'max-age=604800'
+to_folder   = 'assets'
+
+header_max_age = 'max-age=604800'
+header_hello   = 'Say hello! Email: nagasawa@zineinc.co.jp or @wata_n on Twitter'
 
 desc 'Deploy to S3'
 task :deploy do
@@ -30,8 +32,8 @@ task :deploy do
     Dir["**/*"].each do |file|
         next if File.directory?(file)
         mime_type = MIME::Types.type_for(file).first.simplified
-        log.debug("Uploading #{file} with Content-Type: #{mime_type}, Cache-Control: #{max_age}")
-        headers = { 'content-type' => mime_type, 'cache-control' => max_age }
+        log.debug("Uploading #{file} with Content-Type: #{mime_type}, Cache-Control: #{header_max_age}")
+        headers = { 'content-type' => mime_type, 'cache-control' => header_max_age, 'x-hello-human' => header_hello }
         bucket.put(to_folder + '/' + file, File.read(file), {}, 'public-read', headers)
     end
 
