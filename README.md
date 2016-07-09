@@ -1,12 +1,16 @@
 # salmicat-assets
 
-delivered from `cdn.salmicat.com`
+Your project. ZINE's resources.
 
 [![wercker status](https://app.wercker.com/status/c7df8adc8cd7f145091e2b740c2d1597/m "wercker status")](https://app.wercker.com/project/bykey/c7df8adc8cd7f145091e2b740c2d1597)
 
 ## Getting started
 
 ### Website
+
+```html
+<link rel="stylesheet" href="//cdn.salmicat.com/assets/salmicons/salmicons.css">
+```
 
 ```html
 <link rel="stylesheet" href="//cdn.salmicat.com/assets/vendor/off-screen-nav.css">
@@ -34,7 +38,7 @@ function load_styles_and_scripts() {
         wp_enqueue_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
         wp_enqueue_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
         wp_enqueue_style('effeckt', '//cdn.salmicat.com/assets/vendor/off-screen-nav.css');
-        wp_enqueue_style('salmicons', '//cdn.salmicat.com/salmicons/salmicons.css');
+        wp_enqueue_style('salmicons', '//cdn.salmicat.com/assets/salmicons/salmicons.css');
         wp_enqueue_style('zine-style', '//cdn.salmicat.com/assets/css/wp.css');
         wp_enqueue_style('main', SITE_ASSETS_URL . 'main.css', array('bootstrap', 'font-awesome','effeckt', 'salmicons', 'zine-style'), '0.0.1');
         if (is_single()) wp_enqueue_style('article', '//cdn.salmicat.com/assets/css/wp-article.css');
@@ -55,3 +59,5 @@ function load_styles_and_scripts() {
 ```
 
 ## Examples
+
+TODO
