@@ -12,6 +12,7 @@ pwd = Dir.getwd
 
 from_folder = 'src'
 to_folder = 'assets'
+max_age = 604800
 
 desc 'Deploy to S3'
 task :deploy do
@@ -29,8 +30,8 @@ task :deploy do
     Dir["**/*"].each do |file|
         next if File.directory?(file)
         mime_type = MIME::Types.type_for(file).first.simplified
-        log.debug("Uploading #{file} with Content-Type: #{mime_type}")
-        headers = {'content-type' => mime_type}
+        log.debug("Uploading #{file} with Content-Type: #{mime_type}, Cache-Control: max-age=#{max_age}")
+        headers = { 'content-type' => mime_type, 'cache-control' => max_age }
         bucket.put(to_folder + '/' + file, File.read(file), {}, 'public-read', headers)
     end
 
