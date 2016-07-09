@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'salmicon';
+    src:    url('fonts/salmicon.eot?c9itea');
+    src:    url('fonts/salmicon.eot?c9itea#iefix') format('embedded-opentype'),
+        url('fonts/salmicon.ttf?c9itea') format('truetype'),
+        url('fonts/salmicon.woff?c9itea') format('woff'),
+        url('fonts/salmicon.svg?c9itea#salmicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.salmicon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'salmicon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.salmicon-body:before {
+    content: "\e900";
+}
+.salmicon-circle-face:before {
+    content: "\e901";
+}
+.salmicon-circle-face-border:before {
+    content: "\e902";
+}
+.salmicon-circle-body:before {
+    content: "\e903";
+}
+.salmicon-face:before {
+    content: "\e904";
+}
+.salmicon-zineinc:before {
+    content: "\e909";
+}
+.salmicon-zineinc-logo:before {
+    content: "\e90a";
+}
+.salmicon-bootstrap-tokyo:before {
+    content: "\e905";
+}
+.salmicon-bootstrap:before {
+    content: "\e906";
+}
+.salmicon-tokyo:before {
+    content: "\e907";
+}
+.salmicon-bootstrap-logo:before {
+    content: "\e908";
+}
+.salmicon-separatr-logo:before {
+    content: "\e90c";
+}
+.salmicon-separatr:before {
+    content: "\e90d";
+}
+.salmicon-separatr-com:before {
+    content: "\e90e";
+}
+.salmicon-nihonzine:before {
+    content: "\e90b";
+}
+.salmicon-nihonzine-border:before {
+    content: "\e90f";
+}
+.salmicon-nihonzine-parallel:before {
+    content: "\e910";
+}
+.salmicon-nihonzine-gradation:before {
+    content: "\e911";
+}
+.salmicon-nihonzine-logo:before {
+    content: "\e913";
+}
+.salmicon-nihonzine-logo-border:before {
+    content: "\e912";
+}
+

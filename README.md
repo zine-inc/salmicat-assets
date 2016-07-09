@@ -1,8 +1,8 @@
-# zine-assets
+# salmicat-assets
 
-ZINE's static resources.
+delivered from `cdn.salmicat.com`
 
-[![wercker status](https://app.wercker.com/status/dec864bb03b1f0cc813aa6008fd607bb/m "wercker status")](https://app.wercker.com/project/bykey/dec864bb03b1f0cc813aa6008fd607bb)
+[![wercker status](https://app.wercker.com/status/c7df8adc8cd7f145091e2b740c2d1597/m "wercker status")](https://app.wercker.com/project/bykey/c7df8adc8cd7f145091e2b740c2d1597)
 
 ## Getting started
 

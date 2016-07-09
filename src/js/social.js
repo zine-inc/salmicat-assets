@@ -1,6 +1,6 @@
 /**
  * social.js v0.2.6
- * http://zine-inc.github.io/zine-assets/
+ * http://zine-inc.github.io/salmicat-assets/
  * (c) wata, MIT License.
  */
 

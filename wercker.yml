@@ -1,19 +1,8 @@
 box: ruby
 
-build:
-  steps:
-    - script:
-        name: echo
-        code: |
-          echo 'Hello, world!'
-
 deploy:
     steps:
         - bundle-install
         - script:
             name: Deploy to S3
             code: bundle exec rake
-
-    after-steps:
-        - wantedly/pretty-slack-notify:
-            webhook_url: $SLACK_WEBHOOK_URL

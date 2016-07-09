@@ -1,6 +1,6 @@
 /**
  * autopager.js v0.1.2
- * http://zine-inc.github.io/zine-assets/
+ * http://zine-inc.github.io/salmicat-assets/
  * (c) wata, MIT License.
  */
 

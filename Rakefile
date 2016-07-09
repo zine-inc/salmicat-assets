@@ -17,17 +17,12 @@ header_max_age = 'max-age=604800'
 
 desc 'Deploy to S3'
 task :deploy do
-    s3 = Aws::S3.new(
-        ENV['AWS_ACCESS_KEY_ID'],
-        ENV['AWS_SECRET_ACCESS_KEY']
-    )
-
+    s3 = Aws::S3.new(ENV['AWS_ACCESS_KEY_ID'], ENV['AWS_SECRET_ACCESS_KEY'])
     bucket = s3.bucket(ENV['AWS_S3_BUCKET'], true)
-
-    Dir.chdir(from_folder)
 
     log.info('Beginning to deploy files')
 
+    Dir.chdir(from_folder)
     Dir["**/*"].each do |file|
         next if File.directory?(file)
         mime_type = MIME::Types.type_for(file).first.simplified
