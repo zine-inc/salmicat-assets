@@ -88,19 +88,10 @@ if (typeof jQuery === 'undefined') {
     };
 
     Social.prototype.facebook = function(url) {
-        var that = this, ajaxOpts = {};
-
-        ajaxOpts.url      = '//graph.facebook.com/';
-        ajaxOpts.cache    = false;
-        ajaxOpts.dataType = 'json';
-        ajaxOpts.data     = { id: url };
-
-        if (typeof that.opts.protocol !== 'undefined') ajaxOpts.url = that.opts.protocol + ':' + ajaxOpts.url;
-
-        var req = $.ajax(ajaxOpts);
+        var that = this, req = that.fetchYQL('https://graph.facebook.com/?id=' + url)
 
         req.done(function(data, status, xhr) {
-            var count = data['shares'] || 0;
+            var count = (data['share'] && data['share']['share_count']) || 0;
             that.fire('social:done', count);
             that.output(count);
         });
