@@ -1,5 +1,5 @@
 /**
- * social.js v0.2.6
+ * social.js v0.2.7
  * http://zine-inc.github.io/salmicat-assets/
  * (c) wata, MIT License.
  */
@@ -21,7 +21,7 @@ if (typeof jQuery === 'undefined') {
         this.getSocialCount();
     };
 
-    Social.VERSION = '0.2.6';
+    Social.VERSION = '0.2.7';
 
     Social.DEFAULTS = {
         protocol : undefined,
