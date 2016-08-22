@@ -1,5 +1,5 @@
 /**
- * social.js v0.2.7
+ * social.js v0.2.8
  * http://zine-inc.github.io/salmicat-assets/
  * (c) wata, MIT License.
  */
@@ -21,7 +21,7 @@ if (typeof jQuery === 'undefined') {
         this.getSocialCount();
     };
 
-    Social.VERSION = '0.2.7';
+    Social.VERSION = '0.2.8';
 
     Social.DEFAULTS = {
         protocol : undefined,
@@ -91,7 +91,11 @@ if (typeof jQuery === 'undefined') {
         var that = this, req = that.fetchYQL('https://graph.facebook.com/?id=' + url)
 
         req.done(function(data, status, xhr) {
-            var count = (data['share'] && data['share']['share_count']) || 0;
+            var count = 0;
+            if (content !== null) {
+                var m = content.match(/"share_count": ([\d]+)/);
+                count = parseInt(m !== null ? m[1] : 0);
+            }
             that.fire('social:done', count);
             that.output(count);
         });
