@@ -176,3 +176,19 @@
     line-height: inherit;
     margin: 0;
 }
+
+.entry-content ul.check li::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: -1em;
+    width: 8px;
+    height: 3px;
+    border-left: 2px solid #EF4123;
+    border-bottom: 2px solid #EF4123;
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+} 
