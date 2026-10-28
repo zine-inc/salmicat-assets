@@ -1,1 +1,6 @@
 credentials.csv
+
+# Claude Code のローカル状態
+.claude/settings.local.json
+.claude/worktrees/
+.claude/.cc-writes/
